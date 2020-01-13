@@ -19,5 +19,13 @@ class cities extends Controller
     }
     return response()->json($output);
   }
+  public function select_cities(){
+    $data = city::all();
+    $output='<option>Select City</option>';
+    foreach ($data as $row) {
+      $output .="<option value='$row->city_id'>".$row->city_name."</option>";
+    }
+    return response()->json($output);
+  }
  
 }

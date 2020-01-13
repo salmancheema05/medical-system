@@ -1,16 +1,4 @@
-$(document).on('click','.city_id',function(){
-	var city_id=$(this).attr('id');
-	$.ajax({
-        type:"get",
-        url:"city_search_doctor",
-        data:{city_id:city_id},
-        dataType:'json',
-        successs:function(response){
-        	alert(response);
-        }
 
-	});
-});
 get_city();
 function get_city(){
   $.ajax({
@@ -19,6 +7,17 @@ function get_city(){
     dataType:'json',
     success:function(data){
         $('#display_data').html(data);
+    }
+  });
+}
+select_city();
+function select_city(){
+  $.ajax({
+    type:'get',
+    url:'select_cities',
+    dataType:'json',
+    success:function(data){
+      $('#select_cities').html(data);
     }
   });
 }

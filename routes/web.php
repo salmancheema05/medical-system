@@ -15,7 +15,7 @@ Route::group(['middleware' => 'ajax-response'],function(){
     Route::post('clinic_detail','Clinicdetail@insert_data');
     Route::get('department_detail','WebDepartmentController@get_data');
     Route::post('create_target_patient','Clinicdetail@create_target_patient');
-
+    Route::get('select_cities','cities@select_cities');
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

@@ -1,194 +1,442 @@
 @extends('layout.website')
 @section('contant')
-    <!-- Welcome Area Starts -->
-    <section class="welcome-area section-padding3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 align-self-center">
-                    <div class="welcome-img">
-                        <img src="public/styles/images/welcome.png" alt="">
+
+    <!--================ Feature section start =================-->      
+    <section class="feature-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-feature text-center text-lg-left">
+
+                            <h3 class="card-feature__title"><span class="card-feature__icon">
+                                <i class="ti-layers"></i>
+                            </span>Primary Care</h3>
+                            <p class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-feature text-center text-lg-left">
+
+                            <h3 class="card-feature__title"><span class="card-feature__icon">
+                                <i class="ti-heart-broken"></i>
+                            </span>Emergency Cases</h3>
+                            <p class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-feature text-center text-lg-left">
+
+                            <h3 class="card-feature__title"><span class="card-feature__icon">
+                                <i class="ti-headphone-alt"></i>
+                            </span>Online Appointment</h3>
+                            <p class="card-feature__subtitle">An so vulgar to on points wanted rapture ous resolving continued household </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="welcome-text mt-5 mt-lg-0">
-                        <h2>Welcome to our clinic</h2>
-                        <p class="pt-3">Subdue whales void god which living don't midst lesser yielding over lights whose. Cattle greater brought sixth fly den dry good tree isn't seed stars were.</p>
-                        <p>Subdue whales void god which living don't midst lesser yielding over lights whose. Cattle greater brought sixth fly den dry good tree isn't seed stars were the boring.</p>
-                        <a href="#" class="template-btn mt-3">learn more</a>
+            </div>
+    </section>
+    <!--================ Feature section end =================-->  
+
+    <!--================ Service section start =================-->  
+
+    <div class="service-area area-padding-top">
+        <div class="container">
+            <div class="area-heading row">
+                <div class="col-md-5 col-xl-4">
+                    <h3>Awesome<br>
+                    Health Service</h3>
+                </div>
+                <div class="col-md-7 col-xl-8">
+                    <p>Land meat winged called subdue without very light in all years sea appear midst forth image him third there set. Land meat winged called subdue without very light in all years sea appear</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span class="card-service__icon">
+                            <i class="flaticon-brain"></i>
+                        </span>
+                        <h3 class="card-service__title">Neurology Service</h3>
+                        <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform.</p>
+                        <a class="card-service__link" href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span class="card-service__icon">
+                            <i class="flaticon-tooth"></i>
+                        </span>
+                        <h3 class="card-service__title">Dental Clinic</h3>
+                        <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform</p>
+                        <a class="card-service__link" href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
+                        <span class="card-service__icon">
+                            <i class="flaticon-face"></i>
+                        </span>
+                        <h3 class="card-service__title">Plastic Surgery</h3>
+                        <p class="card-service__subtitle">Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform</p>
+                        <a class="card-service__link" href="#">Learn More</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>    
+    <!--================ Service section end =================-->      
+
+
+    <!--================About  Area =================-->
+    <section class="about-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-6 offset-xl-7 col-xl-5">
+                    <div class="about-content">
+                        <h4>Second Abundantly<br>
+                            Move That Cattle Perform<br>
+                        Appen Land</h4>
+                        <h6>Give their their without moving were stars called so divide in female be moving night may fish him</h6>
+                        <p>Give their their without moving were stars called so divide female be moving night may fish him own male vreated great Give their their without moving were. Stars called so divide female moving night may fish him own male created great opportunity deal.</p>
+
+                        <a class="link_one" href="#">learn more</a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Welcome Area End -->
+    <!--================About Area End =================-->
 
-    <!-- Department Area Starts -->
-    <section class="department-area section-padding4">
+    <!--================ Team section start =================-->  
+    <section class="team-area area-padding">
         <div class="container">
+            <div class="area-heading row">
+                <div class="col-md-5 col-xl-4">
+                    <h3>Medcare<br>
+                    Experience Doctors</h3>
+                </div>
+                <div class="col-md-7 col-xl-8">
+                    <p>Land meat winged called subdue without very light in all years sea appear midst forth image him third there set. Land meat winged called subdue without very light in all years sea appear</p>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-top text-center">
-                        <h2>Popular department</h2>
-                        <p>Green above he cattle god saw day multiply under fill in the cattle fowl a all, living, tree word link available in the service for subdue fruit.</p>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-team">
+                        <img class="card-img rounded-0" src="img/team/1.jpg" alt="">
+                        <div class="card-team__body text-center">
+                            <h3><a href="#">Dr Adam Brain</a></h3>
+                            <p>Cardiologist</p>
+                            <div class="team-footer d-flex justify-content-between">
+                                <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
+                                <ul class="card-team__social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-team">
+                        <img class="card-img rounded-0" src="img/team/2.jpg" alt="">
+                        <div class="card-team__body text-center">
+                            <h3><a href="#">Dr Blian Judge</a></h3>
+                            <p>Cardiologist</p>
+                            <div class="team-footer d-flex justify-content-between">
+                                <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
+                                <ul class="card-team__social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-team">
+                        <img class="card-img rounded-0" src="img/team/3.jpg" alt="">
+                        <div class="card-team__body text-center">
+                            <h3><a href="#">Dr Blian Judge</a></h3>
+                            <p>Cardiologist</p>
+                            <div class="team-footer d-flex justify-content-between">
+                                <a class="dn_btn" href=""><i class="ti-mobile"></i>+7 235 365 2365</a>
+                                <ul class="card-team__social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!--================ Team section end =================-->  
+
+
+    <!--================ appointment Area Starts =================-->
+    <section class="appointment-area">
+        <div class="container">
+
+            <div class="appointment-inner">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-5 offset-lg-1">
+                        <h3>Have Some Questions?</h3>
+                        <div class="accordion" id="accordionExample">
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            God male gathering them it female which green cattle?
+                                        </button>
+
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Moving creepeth moved upon man grass two days?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            God male gathering them it female which green cattle?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Saw isn't likeness beginning yielding land days she?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Saw isn't likeness beginning yielding land days she?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="appointment-form">
+                            <h3>Make an Appointment</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!--================ appointment Area End =================-->
+
+
+    <!-- ================ testimonial section start ================= -->      
+    <section class="testimonial">
+        <div class="container">
+            <div class="testi_slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="testimonial_image">
+                            <img src="img/elements/tes1.jpg" alt="">
+                        </div>
+                        <div class="testi_item_content">
+                            <p>
+                                “ Saw kind fruitful itself in man. All in life good wherein beginning their he air That, the saw very years created for seed have without. Can't him fowl his can not ready for game”
+                            </p>
+                            <h4>- Dr. Suzanne Holroyd -</h4>       
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="testimonial_image">
+                            <img src="img/elements/tes1.jpg" alt="">
+                        </div>
+                        <div class="testi_item_content">
+                            <p>
+                                “ Saw kind fruitful itself in man. All in life good wherein beginning their he air That, the saw very years created for seed have without. Can't him fowl his can not ready for game”
+                            </p>
+                            <h4>- Dr. Suzanne Holroyd -</h4>         
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="testimonial_image">
+                            <img src="img/elements/tes1.jpg" alt="">
+                        </div>
+                        <div class="testi_item_content">
+                            <p>
+                                “ Saw kind fruitful itself in man. All in life good wherein beginning their he air That, the saw very years created for seed have without. Can't him fowl his can not ready for game”
+                            </p>
+                            <h4>- Dr. Suzanne Holroyd -</h4>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ testimonial section end ================= -->    
+
+    <!-- ================ Hotline Area Starts ================= -->  
+    <section class="hotline-area text-center area-padding">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="department-slider owl-carousel">
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="public/styles/images/department1.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="#"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>cardiac clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="public/styles/images/department2.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>plastic surgery</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="public/styles/images/department3.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>dental clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                        <div class="single-slide">
-                            <div class="slide-img">
-                                <img src="public/styles/images/department1.jpg" alt="" class="img-fluid">
-                                <div class="hover-state">
-                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-department item-padding text-center">
-                                <h3>cardiac clinic</h3>
-                                <p>Hath creeping subdue he fish gred face whose spirit that seasons today multiply female midst upon</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h2>Emergency hotline</h2>
+                    <span>(+01) – 256 567 550</span>
+                    <p class="pt-3">We provide 24/7 customer support. Please feel free to contact us <br>for emergency case.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Department Area Starts -->
+    <!-- ================ Hotline Area End ================= -->  
 
 
 
-    <!-- Specialist Area Starts -->
-    <section class="specialist-area section-padding">
+
+    <!--================ Start Blog Area =================-->
+    <section class="blog-area area-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-top text-center">
-                        <h2>Our specialish</h2>
-                        <p>Green above he cattle god saw day multiply under fill in the cattle fowl a all, living, tree word link available in the service for subdue fruit.</p>
-                    </div>
+            <div class="area-heading row">
+                <div class="col-md-5 col-xl-4">
+                    <h3>Get Every<br>
+                    Single Update Here</h3>
+                </div>
+                <div class="col-md-7 col-xl-8">
+                    <p>Land meat winged called subdue without very light in all years sea appear midst forth image him third there set. Land meat winged called subdue without very light in all years sea appear</p>
                 </div>
             </div>
+
+
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-doctor mb-4 mb-lg-0">
-                        <div class="doctor-img">
-                            <img src="public/styles/images/doctor1.jpg" alt="" class="img-fluid">
+                <div class="col-md-6 col-lg-4 col-md-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/blog/1.jpg" alt="">
                         </div>
-                        <div class="content-area">
-                            <div class="doctor-name text-center">
-                                <h3>ethel davis</h3>
-                                <h6>sr. faculty data science</h6>
+                        <div class="short_details">
+
+                            <div class="meta-top d-flex">
+                                <a href="#">medical, </a>
+                                <a href="#">dental, </a>
+                                <a href="#">health</a>
                             </div>
-                            <div class="doctor-text text-center">
-                                <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
-                                <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-doctor mb-4 mb-lg-0">
-                        <div class="doctor-img">
-                            <img src="public/styles/images/doctor2.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="content-area">
-                            <div class="doctor-name text-center">
-                                <h3>dand mories</h3>
-                                <h6>sr. faculty plastic surgery</h6>
-                            </div>
-                            <div class="doctor-text text-center">
-                                <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
-                                <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
-                                </ul>
+                            
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Hath is gathering from hath greate gan
+                                man lights evening man.</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#"><i class="ti-comments"></i>08 comment</a>
+                                <a href="#"><i class="ti-heart"></i> 0 like</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-doctor mb-4 mb-sm-0">
-                        <div class="doctor-img">
-                            <img src="public/styles/images/doctor3.jpg" alt="" class="img-fluid">
+                <div class="col-md-6 col-lg-4 col-md-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/blog/2.jpg" alt="">
                         </div>
-                        <div class="content-area">
-                            <div class="doctor-name text-center">
-                                <h3>align board</h3>
-                                <h6>sr. faculty data science</h6>
+                        <div class="short_details">
+                            <div class="meta-top d-flex">
+                                <a href="#">medical, </a>
+                                <a href="#">dental, </a>
+                                <a href="#">health</a>
                             </div>
-                            <div class="doctor-text text-center">
-                                <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
-                                <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
-                                </ul>
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Also good after there saying don third
+                                you be careful every man</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#"><i class="ti-comments"></i>05 comment</a>
+                                <a href="#"><i class="ti-heart"></i> 0 like</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-doctor">
-                        <div class="doctor-img">
-                            <img src="public/styles/images/doctor4.jpg" alt="" class="img-fluid">
+                <div class="col-md-6 col-lg-4 col-md-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/blog/3.jpg" alt="">
                         </div>
-                        <div class="content-area">
-                            <div class="doctor-name text-center">
-                                <h3>jeson limit</h3>
-                                <h6>sr. faculty plastic surgery</h6>
+                        <div class="short_details">
+                            <div class="meta-top d-flex">
+                                <a href="#">medical, </a>
+                                <a href="#">dental, </a>
+                                <a href="#">health</a>
                             </div>
-                            <div class="doctor-text text-center">
-                                <p>If you are looking at blank cassettes on the web, you may be very confused at the.</p>
-                                <ul class="doctor-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
-                                </ul>
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Also good after there saying don third
+                                you be careful every man</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#"><i class="ti-comments"></i>05 comment</a>
+                                <a href="#"><i class="ti-heart"></i> 0 like</a>
                             </div>
                         </div>
                     </div>
@@ -196,68 +444,54 @@
             </div>
         </div>
     </section>
-    <!-- Specialist Area Starts -->
+    <!--================ End Blog Area =================-->
 
-
-    <!-- News Area Starts -->
-    <section class="news-area section-padding">
+    <!--================ Start Brands Area =================-->
+    <section class="brands-area background_one">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-top text-center">
-                        <h2>Recent medical news</h2>
-                        <p>Green above he cattle god saw day multiply under fill in the cattle fowl a all, living, tree word link available in the service for subdue fruit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-news">
-                        <div class="news-img">
-                            <img src="public/styles/images/news1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="news-text">
-                            <div class="news-date">
-                                22 July 2018
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="owl-carousel brand-carousel">
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/brand/1.png" alt="">
                             </div>
-                            <h3><a href="blog-details.html">chip to model coeliac disease</a></h3>
-                            <p>Elementum libero hac leo integer. Risus hac part duriw feugiat litora cursus hendrerit bibendum per person on elit.Tempus inceptos posuere me.</p>
-                            <a href="blog-details.html" class="news-btn">read more <i class="fa fa-long-arrow-right"></i></a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-news mt-5 mt-md-0">
-                        <div class="news-img">
-                            <img src="public/styles/images/news2.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="news-text">
-                            <div class="news-date">
-                                22 Oct 2018
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/brand/2.png" alt="">
                             </div>
-                            <h3><a href="blog-details.html">Galectins An Ancient FaSi Future</a></h3>
-                            <p>Elementum libero hac leo integer. Risus hac part duriw feugiat litora cursus hendrerit bibendum per person on elit.Tempus inceptos posuere me.</p>
-                            <a href="blog-details.html" class="news-btn">read more <i class="fa fa-long-arrow-right"></i></a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-news mt-5 mt-lg-0">
-                        <div class="news-img">
-                            <img src="public/styles/images/news3.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="news-text">
-                            <div class="news-date">
-                                22 Sep 2018
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/brand/3.png" alt="">
                             </div>
-                            <h3><a href="blog-details.html">Getting the Most Out of the CLARI</a></h3>
-                            <p>Elementum libero hac leo integer. Risus hac part duriw feugiat litora cursus hendrerit bibendum per person on elit.Tempus inceptos posuere me.</p>
-                            <a href="blog-details.html" class="news-btn">read more <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/brand/4.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/brand/5.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/brand/3.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- News Area Starts -->
+    <!--================ End Brands Area =================-->
 @endsection

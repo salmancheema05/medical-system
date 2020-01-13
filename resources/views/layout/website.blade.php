@@ -1,196 +1,204 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-    <!-- Required Meta Tags -->
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Page Title -->
-    <title>Medino</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="{{url('public/styles/images/logo/favicon.png')}}" type="image/x-icon">
-
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="{{url('public/styles/css/animate-3.7.0.css')}}">
-    <link rel="stylesheet" href="{{url('public/styles/css/font-awesome-4.7.0.min.css')}}">
-    <link rel="stylesheet" href="{{url('public/styles/css/bootstrap-4.1.3.min.css')}}">
-    <link rel="stylesheet" href="{{url('public/styles/css/owl-carousel.min.css')}}">
-    <link rel="stylesheet" href="{{url('public/styles/css/jquery.datetimepicker.min.css')}}">
-    <link rel="stylesheet" href="{{url('public/styles/css/linearicons.css')}}">
-    <link rel="stylesheet" href="{{url('public/styles/css/style.css')}}">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{{url('public/img/favicon.png')}}" type="image/png">
+    <title>Medcare Medical</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url('public/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{url('public/css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url('public/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url('public/vendors/fontawesome/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{url('public/vendors/owl-carousel/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url('public/vendors/animate-css/animate.css')}}">
+    <!-- main css -->
+    <link rel="stylesheet" href="{{url('public/css/style.css')}}">
+    <link rel="stylesheet" href="{{url('public/css/responsive.css')}}">
 </head>
 <body>
-    <!-- Preloader Starts -->
-    <div class="preloader">
-        <div class="spinner"></div>
-    </div>
-    <!-- Preloader End -->
 
-    <!-- Header Area Starts -->
-    <header class="header-area">
-        <div class="header-top">
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+        <div class="top_menu row m0">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 d-md-flex">
-                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-mobile"></i></span> call us now! +1 305 708 2563</h6>
-                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-envelope-o"></i></span> medical@example.com</h6>
-                        <h6><span class="mr-2"><i class="fa fa-map-marker"></i></span> Find our Location</h6>
+                <div class="float-left">
+                    <a class="dn_btn" href="mailto:medical@example.com"><i class="ti-email"></i>medical@example.com</a>
+                    <span class="dn_btn"> <i class="ti-location-pin"></i>Find our Location</span>
+                </div>
+                <div class="float-right">
+                    <ul class="list header_social">
+                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                        <li><a href="#"><i class="ti-skype"></i></a></li>
+                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+                    </ul>   
+                </div>
+            </div>  
+        </div>  
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="{{url('public/img/logo.png')}}" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="{{url('/')}}">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="{{url('find_doctor')}}">Find Doctor</a></li> 
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="element.html">element</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="{{url('login')}}">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url('register')}}">Doctor Register</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="social-links">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="header" id="home">
-            <div class="container">
-                <div class="row align-items-center justify-content-between d-flex">
-                <div id="logo">
-                    <a href="index.html"><img src="public/websiteassets/images/logo/logo.png" alt="" title="" /></a>
-                </div>
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li class="menu-active"><a href="{{url('/')}}">Home</a></li>
-                        <li><a href="{{url('find_doctor')}}">Find Doctor</a></li>
-                        <li><a href="{{url('department')}}">Department</a></li>
-                        <li class="menu-has-children"><a href="">Pages</a>
-                            <ul>
-                                <li><a href="about.html">about us</a></li>
-                                <li><a href="elements.html">elements</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-has-children"><a href="">blog</a>
-                            <ul>
-                                <li><a href="blog-home.html">blog home</a></li>
-                                <li><a href="blog-details.html">blog details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="{{url('login')}}">Login</a></li>
-                        <li><a href="{{url('register')}}">Registor</a></li>
-                    </ul>
-                </nav><!-- #nav-menu-container -->
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
-    <!-- Header Area End -->
+    <!--================Header Menu Area =================-->
 
-    <!-- Banner Area Starts -->
-    <section class="banner-area">
+    <!--================Home Banner Area =================-->
+
+    <section class="banner-area d-flex align-items-center">
         <div class="container">
             <div class="row">
-              <div class="col-lg-5 offset-lg-1 align-self-center" style ='margin-top:-2rem'>
-                  <div class="appointment-form text-center ">
-
-                      <form action="#">
-                          <div class="form-group">
-                              <input type="text" name='search_doctor' placeholder='Search doctor.... '>
-                          </div>
-                          <div class="form-group">
-                              <input type="email" placeholder="Your Email" >
-                          </div>
-                          <div class="form-group">
-                              <input type="text" id="datepicker" placeholder="Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date'" required>
-                          </div>
-
-                          <a href="#" class="template-btn">appointment now</a>
-                      </form>
-                  </div>
-              </div>
+                <div class="col-md-8 col-lg-6 col-xl-5">
+                    <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search  Doctor name....."  required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="select_cities">
+                                        
+                                    </select> 
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select City</option>
+                                    </select>
+                                </div>
+                                 <input type="button" name="" class="btn btn-primary" value="Find Doctor">
+                            </form>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Banner Area End -->
 
-    <div>@yield('contant')</div>
+    <!--================End Home Banner Area =================-->
 
+      <div>@yield('contant')</div>
+ 
+    <!-- start footer Area -->
+    <footer class="footer-area area-padding-top bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Top Products</h4>
+                    <ul>
+                        <li><a href="#">Managed Website</a></li>
+                        <li><a href="#">Manage Reputation</a></li>
+                        <li><a href="#">Power Tools</a></li>
+                        <li><a href="#">Marketing Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Experts</a></li>
+                        <li><a href="#">Agencies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                    <h4>Newsletter</h4>
+                    <p>You can trust us. we only send promo offers,</p>
+                    <div class="form-wrap" id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                        method="get" class="form-inline">
+                        <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
+                        required="" type="email" />
+                        <button class="click-btn btn btn-default">
+                            <i class="ti-arrow-right"></i>
+                        </button>
+                        <div style="position: absolute; left: -5000px;">
+                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
+                        </div>
 
-    <!-- Footer Area Starts -->
-    <footer class="footer-area section-padding">
-        <div class="footer-widget">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-2 col-lg-3">
-                        <div class="single-widget-home mb-5 mb-lg-0">
-                            <h3 class="mb-4">top products</h3>
-                            <ul>
-                                <li class="mb-2"><a href="#">managed website</a></li>
-                                <li class="mb-2"><a href="#">managed reputation</a></li>
-                                <li class="mb-2"><a href="#">power tools</a></li>
-                                <li><a href="#">marketing service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 offset-xl-1 col-lg-6">
-                        <div class="single-widget-home mb-5 mb-lg-0">
-                            <h3 class="mb-4">newsletter</h3>
-                            <p class="mb-4">You can trust us. we only send promo offers, not a single.</p>
-                            <form action="#">
-                                <input type="email" placeholder="Your email here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email here'" required>
-                                <button type="submit" class="template-btn">subscribe now</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 offset-xl-1 col-lg-3">
-                        <div class="single-widge-home">
-                            <h3 class="mb-4">instagram feed</h3>
-                            <div class="feed">
-                                <img src="public/styles/images/feed1.jpg" alt="feed">
-                                <img src="public/styles/images/feed2.jpg" alt="feed">
-                                <img src="public/styles/images/feed3.jpg" alt="feed">
-                                <img src="public/styles/images/feed4.jpg" alt="feed">
-                                <img src="public/styles/images/feed5.jpg" alt="feed">
-                                <img src="public/styles/images/feed6.jpg" alt="feed">
-                                <img src="public/styles/images/feed7.jpg" alt="feed">
-                                <img src="public/styles/images/feed8.jpg" alt="feed">
-                            </div>
-                        </div>
-                    </div>
+                        <div class="info"></div>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="social-icons ">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="row footer-bottom d-flex justify-content-between">
+            <p class="col-lg-8 col-sm-12 footer-text m-0 text-center">
+                Copyright ©2020 All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            <div class="col-lg-4 col-sm-12 footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-    </footer>
-    <!-- Footer Area End -->
+    </div>
+</footer>
+<!-- End footer Area -->
 
 
-    <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="{{url('public/styles/js/vendor/bootstrap-4.1.3.min.js')}}"></script>
-    <script src="{{url('public/styles/js/vendor/wow.min.js')}}"></script>
-    <script src="{{url('public/styles/js/vendor/owl-carousel.min.js')}}"></script>
-    <script src="{{url('public/styles/js/vendor/jquery.datetimepicker.full.min.js')}}"></script>
-    <script src="{{url('public/styles/js/vendor/jquery.nice-select.min.js')}}"></script>
-    <script src="{{url('public/styles/js/vendor/superfish.min.js')}}"></script>
-    <script src="{{url('public/styles/js/main.js')}}"></script>
-    <script src="{{url('public/ajax/city.js')}}"></script>
-    <script src="{{url('public/ajax/fetchdoctor.js')}}"></script>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{url('public/js/jquery-2.2.4.min.js')}}"></script>
+<script src="{{url('public/js/popper.js')}}"></script>
+<script src="{{url('public/js/bootstrap.min.js')}}"></script>
+<script src="{{url('public/js/stellar.js')}}"></script>
+<script src="{{url('public/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+<script src="{{url('public/js/jquery.ajaxchimp.min.js')}}"></script>
+<script src="{{url('public/js/waypoints.min.js')}}"></script>
+<script src="{{url('public/js/mail-script.js')}}"></script>
+<script src="{{url('public/js/contact.js')}}"></script>
+<script src="{{url('public/js/jquery.form.js')}}"></script>
+<script src="{{url('public/js/jquery.validate.min.js')}}"></script>
+<script src="{{url('public/js/mail-script.js')}}"></script>
+<script src="{{url('public/js/theme.js')}}"></script>
+<script src="{{url('public/ajax/city.js')}}"></script>
 </body>
 </html>
