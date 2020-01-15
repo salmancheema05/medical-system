@@ -15,21 +15,26 @@ class websitepages extends Controller
     public function department(){
       return view('pages.department');
     }
-    public function search($id){
-      $data =city::where('city_name', $id)->first();
-      $id= $data->id; 
-      // $ch = curl_init('localhost/doctorapp/api/doctors_list/'.$id);
-      // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      // $result=curl_exec($ch);
-      // curl_close($ch);
-      //$doctors=json_decode($result);
-      $doctors = DB::table('users')
-        ->join('office_details', 'users.id', '=', 'office_details.doctor_id')
-        ->join('cities', 'cities.id', '=', 'office_details.city_id')
-        ->join('departments', 'departments.id', '=', 'office_details.department_id')
-        ->where('office_details.city_id',$id)
-        ->get();
-      return view('pages.searchdoctor',array('doctors' =>$doctors));
+    public function search($id=null){
+     
+      if ($id !=null) {
+        $data =city::where('city_name', $id)->first();
+        $city= $data->id;
+        $ch = curl_init('localhost/doctorapp/api/doctors_list/'.$city);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $result=curl_exec($ch);
+        curl_close($ch);
+        $doctors=json_decode($result);
+      }
+      else{
+        $ch = curl_init('localhost/doctorapp/api/doctors_list');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $result=curl_exec($ch);
+        curl_close($ch);
+        $doctors=json_decode($result);
+      }
+      
+        return view('pages.searchdoctor',array('doctors' =>$doctors));
     }
     public function dashboard(){
       if (Session::get('login_id')!=null) {

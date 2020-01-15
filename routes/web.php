@@ -3,7 +3,7 @@ Route::get('register','websitepages@register');
 Route::get('/','websitepages@index');
 Route::get('find_doctor','websitepages@finddoctor');
 Route::get('department','websitepages@department');
-Route::get('search/{id}','websitepages@search');
+Route::get('search/{id?}','websitepages@search');
 Route::get('login','websitepages@doctor_login');
 Route::post('clinic_detail','RegisterController@clinic_detail');
 Route::post('loginsystem','RegisterController@loginsystem');
