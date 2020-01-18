@@ -36,4 +36,7 @@ class HomeController extends Controller
     public function doctor_update(){
         return view('profile.updatedata');
     }
+    public function about(){
+        return view('profile.about');
+    }
 }

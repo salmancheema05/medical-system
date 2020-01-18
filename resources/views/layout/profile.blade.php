@@ -69,7 +69,8 @@
        <div class="collapse navbar-collapse" id="navbarNav">
          <ul class="navbar-nav flex-column">
             <li class="nav-item "><a class="nav-link" href="{{url('home')}}">Dashboard</a></li>
-            <li class="nav-item "><a class="nav-link" href="#" data-toggle="modal" data-target="#target_patient">Create/Update Target Patients</a></li>
+
+            <li class="nav-item "><a class="nav-link" href="{{url('about')}}">{{'About of'.' '. ucwords(Auth::user()->name)}}</a></li>
             <li class="nav-item "><a class="nav-link" href="{{url('doctor_update')}}" >Doctor Information update</a></li>
             <li class="nav-item "><a class="nav-link" href="" data-toggle="modal" data-target="#image_modal">Upload Image</a></li>
             <li class="nav-item "><a class="nav-link" href="#">Setting</a></li>
@@ -85,51 +86,6 @@
         <!-- ============================================================== -->
         <!-- ============================================================== -->
 
-        <?php use App\TargetPatient;  $target = TargetPatient::where('doctor_id',Auth::user()->id)->first();  ?>
-        <!-- start target patient model -->
-           <div class="modal" id="target_patient">
-<div class="modal-dialog">
-<div class="modal-content">
-
-<!-- Modal Header -->
-<div class="modal-header">
-<h4 class="modal-title">Target Patient</h4>
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-</div>
-
-<!-- Modal body -->
-<div class="modal-body">
-    @if($target ==null)
-<form action="{{url('create_target_patient')}}" method="post" id="insert_form">
-    <div class="form-group">
-        @csrf
-      <label for="">Create Target Patient</label>
-        <input type="number" class="form-control" name='insert_target_patient' placeholder="Create Target Patient">
-    </div>
-
-    <div class="form-group">
-        <input type="button" class="btn btn-primary" name='create_target_patient' id='create_target_patient' value="Create Target patient">
-    </div>
-</form>
-@else
-<form action="" method="post" id="update_form">
-    <div class="form-group">
-      <label for="">Update Target Patient</label>
-        <input type="number" class="form-control" name='update target_patient'  value="20">
-    </div>
-
-    <div class="form-group">
-        <input type="button" class="btn btn-primary" name='create_target_patient' id='create_target_patient' value="Update Target patient">
-    </div>
-</form>
-@endif
-</div>
-
-</div>
-</div>
-</div>
-
-        <!-- end target patient model -->
 <!-- ============================================================== -->
 <!-- upload image modal-->
 <!-- ============================================================== -->
@@ -229,7 +185,7 @@
 </html>
 <script type="text/javascript">
 $(document).ready(function(){
-    $('#create_target_patient').click(function(){
+    $('#save').click(function(){
         var url =$('#insert_form').attr('action');
         var data =$('#insert_form').serialize();
         $.ajax({
@@ -243,12 +199,8 @@ $(document).ready(function(){
                 }
                 else{
                     alert(data.success);
-                    $('#target_patient').modal('hide');
-                    $('#insert_form')[0].reset();
-                    $('#update_form').show();
-                    $('#insert_form').hide();
+                    window.location.replace("home");
                     
-                    get_information();
                 }
             }
        });
@@ -262,6 +214,17 @@ function get_information(){
     dataType:'json',
     success:function(data){
         $('#display_data').html(data);
+    }
+  });
+}
+get_about()
+function get_about(){
+  $.ajax({
+    type:'get',
+    url:'get_about',
+    dataType:'json',
+    success:function(data){
+        $('#data').html(data);
     }
   });
 }

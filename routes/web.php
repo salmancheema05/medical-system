@@ -2,6 +2,7 @@
 Route::get('register','websitepages@register');
 Route::get('/','websitepages@index');
 Route::get('find_doctor','websitepages@finddoctor');
+Route::get('doctor_view/{id}/{slug}','websitepages@doctor_view');
 Route::get('department','websitepages@department');
 Route::get('search/{id?}','websitepages@search');
 Route::get('login','websitepages@doctor_login');
@@ -14,9 +15,11 @@ Route::group(['middleware' => 'ajax-response'],function(){
     Route::get('get_cities','cities@get_cities');
     Route::post('clinic_detail','Clinicdetail@insert_data');
     Route::get('department_detail','WebDepartmentController@get_data');
-    Route::post('create_target_patient','Clinicdetail@create_target_patient');
+    Route::post('about_create','Clinicdetail@about_create');
+    Route::get('get_about','Clinicdetail@get_about');
     Route::get('select_cities','cities@select_cities');
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/doctor_update', 'HomeController@doctor_update'); 
+Route::get('/about', 'HomeController@about'); 

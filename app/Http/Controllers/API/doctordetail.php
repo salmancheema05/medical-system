@@ -17,16 +17,17 @@ class doctordetail extends Controller
   	    	'phone'         => 'required',
             'city_name'     => 'required',
             'department_id' => 'required',
+            'experience'    => 'required',
      	]);
      	if ($validator->fails()) { 
             return response()->json(['error'=> $validator->errors()]);            
         }
         else{
      	    $exist_city = city::where('city_name' ,$request->city_name)->first();
-     	    if ($exist_city==true) { 
+     	    if ($exist_city!=null) { 
      	        office_detail::create([
      	        	'doctor_id'     => $request->doctor_id,
-     	        	'city_id'       => $exist_city->id,
+     	        	'city_id'       => $exist_city->city_id,
      	        	'days'          => $request->days,
      	        	'department_id' => $request->department_id,
      	        	'morning_time'  => $request->morning_time,
@@ -34,8 +35,9 @@ class doctordetail extends Controller
      	        	'address'       => $request->address,  
      	        	'fee'           => $request->fee,
      	        	'phone'         => $request->phone,
+                    'experience'    => $request->experience,
      	        ]);	
-     	        return response()->json('Your data has been save');
+     	        return response()->json('You have been registered');
             } 
      	    else{
                 $add_city = city::create(['city_name'  => $request->city_name]);
@@ -49,8 +51,9 @@ class doctordetail extends Controller
      	        	'address'       => $request->address,
      	        	'fee'           => $request->fee,
      	        	'phone'         => $request->phone,
+                    'experience'    => $request->experience,
      	        ]);	
-     	        return response()->json('Your data has been saved');
+     	        return response()->json('You have been registered');
             } 
         }     
     }

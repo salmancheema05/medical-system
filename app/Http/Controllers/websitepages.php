@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\city;
 use DB;
+use App\user;
 class websitepages extends Controller
 {
     public function index(){
@@ -19,34 +21,45 @@ class websitepages extends Controller
      
       if ($id !=null) {
         $data =city::where('city_name', $id)->first();
-        $city= $data->id;
-        $ch = curl_init('localhost/doctorapp/api/doctors_list/'.$city);
+        //dd($data->city_id);
+        $url = 'http://localhost/doctorapp/api/doctors_list/?'.$data->city_id;
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_TIMEOUT,30);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result=curl_exec($ch);
-        curl_close($ch);
         $doctors=json_decode($result);
+        curl_close($ch); 
       }
       else{
         $ch = curl_init('localhost/doctorapp/api/doctors_list');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result=curl_exec($ch);
-        curl_close($ch);
         $doctors=json_decode($result);
-      }
-      
-        return view('pages.searchdoctor',array('doctors' =>$doctors));
+        curl_close($ch);
+      } 
+      return view('pages.searchdoctor',array('doctors' =>$doctors));
     }
-    public function dashboard(){
-      if (Session::get('login_id')!=null) {
-        return view('profile.home');
-      }
-      return redirect('login');
-    }
-  
     public function register(){
       return view('pages.signup');
     }
     public function doctor_login(){
       return view('pages.login');
     }
+    public function doctor_view($id){
+      $data= user::find($id);
+      if ($data != null) {
+        $doctor_id = $data->id;
+        $doctor = DB::table('users')
+        ->join('office_details', 'users.id', '=', 'office_details.doctor_id')
+        ->join('cities', 'cities.city_id', '=', 'office_details.city_id')
+        ->join('departments', 'departments.department_id', '=', 'office_details.department_id')
+        ->where('office_details.doctor_id',$doctor_id)
+        ->first();
+        return view('pages.view',array('doctor' => $doctor));
+      }
+      else{
+        return redirect('/');
+      }
+    }
+
 }

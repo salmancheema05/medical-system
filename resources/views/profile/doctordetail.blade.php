@@ -52,6 +52,10 @@
                   <input type="text" class="form-control" name='doctor_fee'  placeholder='Doctore Fee'>
               </div>
               <div class="form-group">
+                <label for="">Doctor  Experience</label>
+                  <input type="number" class="form-control" name='experience'  placeholder='Doctore Experience'>
+              </div>
+              <div class="form-group">
                 <label for="">Doctor Morning Time</label>
                   <input type="text" class="form-control" name='doctor_morning_time' placeholder="8:00am- 9:00am">
               </div>
@@ -75,7 +79,7 @@
   $(document).ready(function(){
     $('#next').click(function(){
       var url  =  $('#doctor_detail').attr('action');
-      var data =  $('#doctor_detail').serialize()
+      var data =  $('#doctor_detail').serialize();
       $.ajax({
         method: 'post',
         url: url,
